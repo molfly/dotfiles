@@ -1,3 +1,4 @@
+#!/bin/sh
 base=$(cut -d '.' -f1 /proc/uptime); 
 seconds=$(date +%s); 
 dmesg | sed 's/\]//;s/\[//;s/\([^.]\)\.\([^ ]*\)\(.*\)/\1\n\3/' | 
